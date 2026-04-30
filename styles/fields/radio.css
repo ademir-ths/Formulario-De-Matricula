@@ -8,6 +8,7 @@ label + .radio-wrapper {
   gap: 1rem;
 }
 
+.radio-inner,
 .radio-winner {
   border: 1px solid var(--stroke-default);
   border-radius: 0.5rem;
@@ -27,6 +28,12 @@ label + .radio-wrapper {
     position: absolute;
     inset: 0;
     cursor: pointer;
+  }
+
+  & img {
+    width: 3rem;
+    height: 3rem;
+    pointer-events: none;
   }
 
   & label {
