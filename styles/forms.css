@@ -19,3 +19,90 @@ legend {
 fieldset + fieldset {
   margin-top: 3rem;
 }
+
+/* ================================================================
+   SEÇÃO DE ACEITE DOS TERMOS E CONDIÇÕES - TODO
+   ================================================================
+   
+   Quando implementado, adicionar os estilos abaixo para a seção .terms-wrapper:
+   
+   .terms-wrapper {
+     background-color: var(--surface-secondary);
+     border-radius: 0.5rem;
+     padding: 1.5rem;
+     margin-top: 2rem;
+     
+     display: flex;
+     align-items: flex-start;
+     gap: 0.75rem;
+   }
+   
+   .terms-wrapper input[type="checkbox"] {
+     width: 1.25rem;
+     height: 1.25rem;
+     margin-top: 0.25rem;
+     cursor: pointer;
+     flex-shrink: 0;
+   }
+   
+   .terms-wrapper label {
+     margin-bottom: 0;
+     font: var(--text-sm);
+     color: var(--text-secondary);
+     cursor: pointer;
+   }
+   
+   .terms-wrapper a {
+     color: var(--text-highlight);
+     text-decoration: none;
+     font-weight: 600;
+     transition: opacity 0.2s ease;
+   }
+   
+   .terms-wrapper a:hover {
+     opacity: 0.8;
+   }
+*/
+
+/* ================================================================
+   SEÇÃO DE BOTÕES DE AÇÃO - TODO
+   ================================================================
+   
+   Quando implementado, adicionar os estilos abaixo para os botões:
+   
+   .form-actions {
+     display: flex;
+     gap: 1rem;
+     justify-content: flex-end;
+     margin-top: 3rem;
+   }
+   
+   .btn {
+     padding: 0.75rem 2rem;
+     border-radius: 0.5rem;
+     font: 600 0.875rem/1.4 var(--font-family);
+     border: none;
+     cursor: pointer;
+     transition: all 0.2s ease;
+   }
+   
+   .btn-primary {
+     background-color: var(--stroke-highlight);
+     color: var(--surface-primary);
+   }
+   
+   .btn-primary:hover {
+     background-color: #e43a12;
+     box-shadow: 0 2px 8px rgba(227, 58, 18, 0.2);
+   }
+   
+   .btn-secondary {
+     background-color: var(--surface-primary);
+     color: var(--stroke-highlight);
+     border: 1.5px solid var(--stroke-highlight);
+   }
+   
+   .btn-secondary:hover {
+     background-color: #fee7d6;
+   }
+*/

@@ -96,3 +96,44 @@ input {
     display: none;
   }
 }
+
+/* ================================================================
+   ESTILO DO CHECKBOX - TODO (Adicionar em forms.css ou aqui)
+   ================================================================
+   
+   Quando implementar o checkbox para aceitar os termos:
+   
+   input[type="checkbox"] {
+     appearance: none;
+     width: 1.25rem;
+     height: 1.25rem;
+     border: 2px solid var(--stroke-default);
+     border-radius: 0.25rem;
+     cursor: pointer;
+     background-color: var(--surface-primary);
+     transition: all 0.2s ease;
+     position: relative;
+   }
+   
+   input[type="checkbox"]:hover {
+     border-color: var(--stroke-highlight);
+   }
+   
+   input[type="checkbox"]:checked {
+     background-color: var(--stroke-highlight);
+     border-color: var(--stroke-highlight);
+   }
+   
+   input[type="checkbox"]:checked::after {
+     content: "✓";
+     position: absolute;
+     color: white;
+     font-size: 1rem;
+     font-weight: bold;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 100%;
+   }
+*/
