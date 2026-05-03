@@ -4,7 +4,8 @@ select {
   appearance: none;
   width: 100%;
   border-radius: 0.5rem;
-  border: 1px solid var(--stroke-default);
+  border: 2px solid transparent;
+  outline: 1px solid var(--stroke-default);
 
   padding: 0.75rem 1rem;
 
@@ -23,9 +24,12 @@ input:focus,
 select:focus,
 textarea:focus,
 input[type="date"]:focus-within {
-  outline: 0.25rem solid var(--text-highlight);
-  border: 0.125rem solid var(--stroke-highlight);
-  outline-offset: 0.1px;
+  outline: none;
+  border-color: var(--stroke-highlight);
+  box-shadow: 0 0 0 0.125rem rgba(227, 58, 18, 0.12);
+  transition:
+    box-shadow 0.15s ease,
+    border-color 0.15s ease;
 }
 
 input[type="date"] {
@@ -96,44 +100,3 @@ input {
     display: none;
   }
 }
-
-/* ================================================================
-   ESTILO DO CHECKBOX - TODO (Adicionar em forms.css ou aqui)
-   ================================================================
-   
-   Quando implementar o checkbox para aceitar os termos:
-   
-   input[type="checkbox"] {
-     appearance: none;
-     width: 1.25rem;
-     height: 1.25rem;
-     border: 2px solid var(--stroke-default);
-     border-radius: 0.25rem;
-     cursor: pointer;
-     background-color: var(--surface-primary);
-     transition: all 0.2s ease;
-     position: relative;
-   }
-   
-   input[type="checkbox"]:hover {
-     border-color: var(--stroke-highlight);
-   }
-   
-   input[type="checkbox"]:checked {
-     background-color: var(--stroke-highlight);
-     border-color: var(--stroke-highlight);
-   }
-   
-   input[type="checkbox"]:checked::after {
-     content: "✓";
-     position: absolute;
-     color: white;
-     font-size: 1rem;
-     font-weight: bold;
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     width: 100%;
-     height: 100%;
-   }
-*/

@@ -6,7 +6,6 @@ form {
 
 fieldset {
   border: none;
-
   display: grid;
   gap: 1.5rem;
 }
@@ -26,54 +25,6 @@ fieldset + fieldset {
   gap: 1rem;
 }
 
-/* ================================================================
-   SEÇÃO DE ACEITE DOS TERMOS E CONDIÇÕES - TODO
-   ================================================================
-   
-   Quando implementado, adicionar os estilos abaixo para a seção .terms-wrapper:
-   
-   .terms-wrapper {
-     background-color: var(--surface-secondary);
-     border-radius: 0.5rem;
-     padding: 1.5rem;
-     margin-top: 2rem;
-     
-     display: flex;
-     align-items: flex-start;
-     gap: 0.75rem;
-   }
-   
-   .terms-wrapper input[type="checkbox"] {
-     width: 1.25rem;
-     height: 1.25rem;
-     margin-top: 0.25rem;
-     cursor: pointer;
-     flex-shrink: 0;
-   }
-   
-   .terms-wrapper label {
-     margin-bottom: 0;
-     font: var(--text-sm);
-     color: var(--text-secondary);
-     cursor: pointer;
-   }
-   
-   .terms-wrapper a {
-     color: var(--text-highlight);
-     text-decoration: none;
-     font-weight: 600;
-     transition: opacity 0.2s ease;
-   }
-   
-   .terms-wrapper a:hover {
-     opacity: 0.8;
-   }
-*/
-
-/* ================================================================
-   SEÇÃO DE BOTÕES DE AÇÃO - TODO
-   ================================================================
-*/
 .actions-wrapper button {
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
