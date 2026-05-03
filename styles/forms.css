@@ -20,6 +20,12 @@ fieldset + fieldset {
   margin-top: 3rem;
 }
 
+.actions-wrapper {
+  margin-top: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
 /* ================================================================
    SEÇÃO DE ACEITE DOS TERMOS E CONDIÇÕES - TODO
    ================================================================
@@ -67,42 +73,40 @@ fieldset + fieldset {
 /* ================================================================
    SEÇÃO DE BOTÕES DE AÇÃO - TODO
    ================================================================
-   
-   Quando implementado, adicionar os estilos abaixo para os botões:
-   
-   .form-actions {
-     display: flex;
-     gap: 1rem;
-     justify-content: flex-end;
-     margin-top: 3rem;
-   }
-   
-   .btn {
-     padding: 0.75rem 2rem;
-     border-radius: 0.5rem;
-     font: 600 0.875rem/1.4 var(--font-family);
-     border: none;
-     cursor: pointer;
-     transition: all 0.2s ease;
-   }
-   
-   .btn-primary {
-     background-color: var(--stroke-highlight);
-     color: var(--surface-primary);
-   }
-   
-   .btn-primary:hover {
-     background-color: #e43a12;
-     box-shadow: 0 2px 8px rgba(227, 58, 18, 0.2);
-   }
-   
-   .btn-secondary {
-     background-color: var(--surface-primary);
-     color: var(--stroke-highlight);
-     border: 1.5px solid var(--stroke-highlight);
-   }
-   
-   .btn-secondary:hover {
-     background-color: #fee7d6;
-   }
 */
+.actions-wrapper button {
+  padding: 0.75rem 2rem;
+  border-radius: 0.5rem;
+  font: 600 0.875rem/1.4 var(--font-family);
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    box-shadow 0.2s ease,
+    outline-color 0.2s ease;
+}
+
+.actions-wrapper .btn-primary {
+  border: none;
+  background-color: var(--stroke-highlight);
+  color: var(--surface-primary);
+}
+
+.actions-wrapper .btn-primary:hover,
+.actions-wrapper .btn-primary:focus-visible {
+  background-color: #e43a12;
+  box-shadow: 0 0.125rem 0.5rem rgba(227, 58, 18, 0.2);
+}
+
+.actions-wrapper .btn-secondary {
+  margin-left: auto;
+  border: 0.09375rem solid var(--stroke-highlight);
+  background-color: var(--surface-primary);
+  color: var(--stroke-highlight);
+}
+
+.actions-wrapper .btn-secondary:hover,
+.actions-wrapper .btn-secondary:focus-visible {
+  background-color: #fee7d6;
+  outline: 0.25rem solid var(--surface-secondary);
+}
