@@ -8,8 +8,7 @@ label + .radio-wrapper {
   gap: 1rem;
 }
 
-.radio-inner,
-.radio-winner {
+.radio-option {
   border: 1px solid var(--stroke-default);
   border-radius: 0.5rem;
 
@@ -49,16 +48,16 @@ label + .radio-wrapper {
   &:has(input:checked) {
     border: 2px solid var(--stroke-highlight);
 
-    .radio-image {
+    .radio-indicator {
       background-image: url(../../assets/icons/radio-checked.svg);
     }
   }
 
-  &:hover .radio-image {
+  &:hover .radio-indicator {
     background-image: url(../../assets/icons/radio-rover.svg);
   }
 
-  .radio-image {
+  .radio-indicator {
     background-image: url(../../assets/icons/raduis-default.svg);
 
     width: 1.5rem;

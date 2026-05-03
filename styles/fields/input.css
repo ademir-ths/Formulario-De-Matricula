@@ -100,3 +100,28 @@ input {
     display: none;
   }
 }
+
+#email:invalid {
+  border-color: transparent;
+}
+
+#email:hover,
+#email:focus {
+  outline: none;
+  border-color: var(--stroke-highlight);
+  box-shadow: 0 0 0 0.125rem rgba(227, 58, 18, 0.12);
+}
+
+#email:not(:placeholder-shown):invalid {
+  border-color: var(--semantic-error);
+  box-shadow: 0 0 0 0.125rem rgba(220, 38, 38, 0.12);
+}
+
+#email:placeholder-shown + .error,
+#email:valid + .error {
+  display: none;
+}
+
+#email:not(:placeholder-shown):invalid + .error {
+  display: flex;
+}

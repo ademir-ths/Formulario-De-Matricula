@@ -19,13 +19,13 @@ fieldset + fieldset {
   margin-top: 3rem;
 }
 
-.actions-wrapper {
+.form-actions-wrapper {
   margin-top: 3rem;
   display: flex;
   gap: 1rem;
 }
 
-.actions-wrapper button {
+.form-actions-wrapper button {
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   font: 600 0.875rem/1.4 var(--font-family);
@@ -37,27 +37,27 @@ fieldset + fieldset {
     outline-color 0.2s ease;
 }
 
-.actions-wrapper .btn-primary {
+.form-actions-wrapper .btn-primary {
   border: none;
   background-color: var(--stroke-highlight);
   color: var(--surface-primary);
 }
 
-.actions-wrapper .btn-primary:hover,
-.actions-wrapper .btn-primary:focus-visible {
+.form-actions-wrapper .btn-primary:hover,
+.form-actions-wrapper .btn-primary:focus-visible {
   background-color: #e43a12;
   box-shadow: 0 0.125rem 0.5rem rgba(227, 58, 18, 0.2);
 }
 
-.actions-wrapper .btn-secondary {
+.form-actions-wrapper .btn-secondary {
   margin-left: auto;
   border: 0.09375rem solid var(--stroke-highlight);
   background-color: var(--surface-primary);
   color: var(--stroke-highlight);
 }
 
-.actions-wrapper .btn-secondary:hover,
-.actions-wrapper .btn-secondary:focus-visible {
+.form-actions-wrapper .btn-secondary:hover,
+.form-actions-wrapper .btn-secondary:focus-visible {
   background-color: #fee7d6;
   outline: 0.25rem solid var(--surface-secondary);
 }

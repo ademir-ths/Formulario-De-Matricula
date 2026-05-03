@@ -1,4 +1,4 @@
-.terms-wrapper {
+.terms-and-conditions-wrapper {
   margin-top: 3rem;
   display: flex;
   gap: 0.75rem;
@@ -11,7 +11,7 @@
   }
 }
 
-.checkbox-wrapper {
+.terms-checkbox-wrapper {
   position: relative;
 
   .checkbox {
@@ -24,7 +24,7 @@
     flex-shrink: 0;
     transition: border-color 0.2s ease;
 
-    &.image {
+    &.checkbox-icon {
       width: 1.25rem;
       height: 1.25rem;
       flex-shrink: 0;
@@ -41,7 +41,7 @@
       border-color: var(--text-highlight);
     }
 
-    .checkbox.image {
+    .checkbox.checkbox-icon {
       background-image: url(../../assets/icons/checkbox-hover.svg);
     }
   }
@@ -57,14 +57,14 @@
     opacity: 0;
     z-index: 1;
 
-    &:checked + .checkbox.image {
+    &:checked + .checkbox.checkbox-icon {
       background-image: url(../../assets/icons/checkbox-checked.svg);
       border-color: transparent;
       background-color: transparent;
     }
 
-    &:checked:hover + .checkbox.image,
-    &:checked:focus + .checkbox.image {
+    &:checked:hover + .checkbox.checkbox-icon,
+    &:checked:focus + .checkbox.checkbox-icon {
       background-image: url(../../assets/icons/checkbox-checked.svg);
       border-color: transparent;
       background-color: transparent;
